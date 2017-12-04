@@ -1,0 +1,183 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1em;
+    color: #000000;
+    margin: 0px;
+}
+body h1 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+body .list-wrapper {
+    -moz-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin: 0 auto;
+    width: 280px;
+    margin-top: -31%;
+    opacity: 0.7;
+    margin-left: 2%;
+}
+body .list-wrapper .list-container {
+    position: relative;
+    overflow: hidden;
+}
+body .list-wrapper .list-container .list-header-container {
+    position: relative;
+    background: none;
+    background-color: #F7F7F9;
+}
+body .list-wrapper .list-container .list-header-container a.back-link {
+    display: inline-block;
+    position: absolute;
+    padding: 30px 20px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+body .list-wrapper .list-container .list-header-container a.back-link:hover {
+    color: #2eb5ef;
+}
+body .list-wrapper .list-container .list-header-container h3 {
+    margin: 0;
+    border: 0 none;
+    padding: 25px 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+}
+body .list-wrapper .list-body-container {
+    position: relative;
+    left: -15%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 330px;
+    width: 115%;
+}
+body .list-wrapper .list-body-container ul {
+    -moz-transition: min-height linear, -moz-transform 0.3s ease-out;
+    -o-transition: min-height linear, -o-transform 0.3s ease-out;
+    -webkit-transition: min-height linear, -webkit-transform 0.3s ease-out;
+    transition: min-height linear, transform 0.3s ease-out;
+    -moz-transform: translateX(115%);
+    -ms-transform: translateX(115%);
+    -webkit-transform: translateX(115%);
+    transform: translateX(115%);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+    position: absolute;
+    list-style: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    width: 100%;
+    min-height: 300px;
+    background-color: #FFFFFF;
+}
+body .list-wrapper .list-body-container ul.hidden {
+    display: none;
+}
+body .list-wrapper .list-body-container ul.active-list {
+    display: block;
+    -moz-transform: translateX(13%);
+    -ms-transform: translateX(13%);
+    -webkit-transform: translateX(13%);
+    transform: translateX(13%);
+    min-height: 100%;
+}
+body .list-wrapper .list-body-container ul.active-list.parent-list {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+body .list-wrapper .list-body-container ul li {
+    display: block;
+    margin: 0 0 0 2rem;
+    border-top: 1px solid #D2D2D2;
+    padding: 0;
+}
+body .list-wrapper .list-body-container ul li:first-child {
+    border-top: 0 none;
+}
+body .list-wrapper .list-body-container ul li a {
+    display: block;
+    padding: 0.5rem 6rem 0.5rem 0.1rem;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 12.5px;
+    width: 215px;
+}
+body .list-wrapper .list-body-container ul li a .list-label {
+    float: left;
+}
+body .list-wrapper .list-body-container ul li a .right-arrow {
+    float: right;
+}
+body .list-wrapper .list-body-container ul li a:hover, body .list-wrapper .list-body-container ul li a:focus, body .list-wrapper .list-body-container ul li a.active-link {
+    color: #2eb5ef;
+}
+
+body section {
+    margin: -31% auto 120px;
+    font-size: 62.5%;
+    text-align: center;
+    padding: 25px 5px 0px 20px;
+    width: 55%;
+    opacity: 0.7;
+    margin-left: 40%;
+    background-color: #f7f7f9;
+}
+
+#dynamicdiv {
+    height: 230px;
+    width: 90%;
+    text-align: left;
+    font-size: 17px;
+}
+
+#dynamicdiv {
+    height: 200px;
+    width:90%;
+    text-align:left;
+    font-size: 17px;
+}
+
+#questionList{
+    height: 250px;
+    overflow: auto;
+}
+
+.youtube-player{
+    border: 1px solid #1D740C;
+    height: 94%;
+    width: 100%;
+    padding: 0px;
+    margin-left: 4%;
+    margin-bottom: 25px;
+}
+
+.main-header {
+    color: #fff;
+    padding: 20% 3%;
+    background-image: -webkit-linear-gradient(rgba(19, 9, 51, 0.7), transparent 90%), -webkit-linear-gradient(-270deg, #fff, transparent 90%), url("http://i2.chroniclelive.co.uk/incoming/article5694826.ece/alternates/s1227b/Gateshead-Quayside-by-Ian-Hunter.jpg");
+    background-image: linear-gradient(rgba(19, 9, 51, 0.7), transparent 90%), linear-gradient(0deg, #fff, transparent 90%), url("http://i2.chroniclelive.co.uk/incoming/article5694826.ece/alternates/s1227b/Gateshead-Quayside-by-Ian-Hunter.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+

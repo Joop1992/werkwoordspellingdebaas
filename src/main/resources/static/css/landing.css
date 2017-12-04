@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700,400,300,100|Montserrat:400,700);
+body {
+    color: #4E5A74;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 1.3;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.8em;
+        text-shadow: none;
+    }
+}
+
+h2 {
+    font-size: 3.3125em;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    line-height: 1.2;
+}
+
+p, ul {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+}
+
+a {
+    color: #e5ba68;
+    text-decoration: none;
+    font-weight: 400;
+}
+a:link {
+    color: #e5ba68;
+}
+a:visited {
+    color: #af7d1e;
+}
+a:hover {
+    color: #ecce94;
+}
+a:focus {
+    color: #f4e2bf;
+}
+
+.button {
+    color: #4E5A74;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+.button:link {
+    color: #4E5A74;
+}
+.button:visited {
+    color: #1b1f28;
+}
+.button:hover {
+    color: #637292;
+}
+.button:focus {
+    color: #7f8ca9;
+}
+
+.container {
+    max-width: 940px;
+    margin: 10px auto 80px;
+    padding: 0 3%;
+}
+
+.main-header {
+    color: #fff;
+    padding: 20% 3%;
+    background-image: -webkit-linear-gradient(rgba(19, 9, 51, 0.7), transparent 90%), -webkit-linear-gradient(-270deg, #fff, transparent 90%), url("http://i2.chroniclelive.co.uk/incoming/article5694826.ece/alternates/s1227b/Gateshead-Quayside-by-Ian-Hunter.jpg");
+    background-image: linear-gradient(rgba(19, 9, 51, 0.7), transparent 90%), linear-gradient(0deg, #fff, transparent 90%), url("http://i2.chroniclelive.co.uk/incoming/article5694826.ece/alternates/s1227b/Gateshead-Quayside-by-Ian-Hunter.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+    .main-header {
+        max-height: 850px;
+        padding-top: 80.0px;
+        padding-bottom: 1.0px;
+    }
+}
+@media (max-width: 768px) {
+    .main-header {
+        padding: 40% 3%;
+    }
+}
+.main-header .top {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 80px;
+}
+.main-header .top i {
+    display: block;
+    font-size: 3em;
+}
+.main-header .north {
+    display: block;
+    font-size: 0.63em;
+}
+
+.primary {
+    margin-bottom: 80px;
+}
+.primary .intro {
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+    .primary .intro {
+        font-size: 1.2em;
+    }
+}
+
+.howay {
+    padding: 20%;
+    margin: 80px auto 20px;
+    border-radius: 8px;
+    background-image: -webkit-linear-gradient(-45deg, rgba(19, 9, 51, 0.9), rgba(19, 9, 51, 0.9)), url("http://i1.thejournal.co.uk/incoming/article4341038.ece/alternates/s615/aerial-view-of-newcastle-and-gateshead-981645981.jpg");
+    background-image: linear-gradient(-45deg, rgba(19, 9, 51, 0.9), rgba(19, 9, 51, 0.9)), url("http://i1.thejournal.co.uk/incoming/article4341038.ece/alternates/s615/aerial-view-of-newcastle-and-gateshead-981645981.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.8);
+}
+.howay h2 {
+    color: #fff;
+}
+
+.secondary ul, .secondary p {
+    text-align: left;
+}
+.secondary img {
+    width: 100%;
+    border-radius: 8px;
+}
+.secondary .turism {
+    width: 46.5%;
+    float: left;
+}
+@media (max-width: 768px) {
+    .secondary .turism {
+        float: none;
+        width: 100%;
+    }
+}
+.secondary .culture {
+    width: 46.5%;
+    float: right;
+}
+@media (max-width: 768px) {
+    .secondary .culture {
+        float: none;
+        width: 100%;
+    }
+}
+.secondary ul span {
+    color: #9ea8bd;
+    font-weight: 200;
+    padding-left: 1em;
+}
+
+.footer {
+    padding: 20px 0 50px;
+    border-bottom: 15px solid #130933;
+}
+
+.border {
+    display: block;
+    width: 20%;
+    margin: 0 auto 25px;
+    border-bottom: 2px solid;
+}
+
+.less-marging {
+    margin-top: -10px;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Butler</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <link type="text/css" href="/css/createLesson.css" rel="stylesheet" />
+    <link type="text/css" href="/css/menu.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div class="ph-line-nav nav">
+    <a href="/">Home</a>
+    <a href="#">Begrippen</a>
+    <a href="#">Ww. schema</a>
+    <a href="/contact">Contact</a>
+    <a href="/excercises">Oefenen</a>
+    <a href="/loginChoice">Inloggen</a>
+    <div class="effect"></div>
+</div>
+<header class="main-header"></header>
+
+<div class="list-wrapper">
+    <div class="list-container">
+        <div class="list-header-container">
+            <a href="" class="back-link">&lt;</a>
+            <h3>Lessen</h3>
+        </div>
+        <div class="list-body-container">
+            <ul id="list-0" class="list-0 active-list">
+                <li class="list-0-item">
+                    <a href="#list-1" class="list-link"><span class="list-link-label">Persoonsvorm tegenwoordige tijd</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-1" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-1-1" class="list-link" onclick="setLesson('Persoonsvorm tegenwoordige tijd: Les 1', '1', 'pvtt');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-1-2" onclick="setLesson('Persoonsvorm tegenwoordige tijd: Les 2', '2', 'pvtt');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-1-3" class="list-link" onclick="setLesson('Persoonsvorm tegenwoordige tijd: Les 3', '3', 'pvtt');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-0-item">
+                    <a href="#list-2" class="list-link"><span class="list-link-label">Persoonsvorm verleden tijd</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-2" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-2-1" class="list-link" onclick="setLesson('Persoonsvorm verleden tijd: Les 1', '1', 'pvvt');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-2-2" onclick="setLesson('Persoonsvorm verleden tijd: Les 2', '2', 'pvvt');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-2-3" class="list-link" onclick="setLesson('Persoonsvorm verleden tijd: Les 3', '3', 'pvvt');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-0-item">
+                    <a href="#list-3" class="list-link"><span class="list-link-label">Infinitief</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-3" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-3-1" class="list-link" onclick="setLesson('Infinitief: Les 1', '1', 'inf');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-3-2" onclick="setLesson('Infinitief: Les 2', '2', 'inf');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-3-3" class="list-link" onclick="setLesson('Infinitief: Les 3', '3', 'inf');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-0-item">
+                    <a href="#list-4" class="list-link"><span class="list-link-label">Voltooid deelwoord</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-4" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-4-1" class="list-link" onclick="setLesson('Voltooid deelwoord: Les 1', '1', 'vtdw');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-4-2" onclick="setLesson('Voltooid deelwoord: Les 2', '2', 'vtdw');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-4-3" class="list-link" onclick="setLesson('Voltooid deelwoord: Les 3', '3', 'vtdw');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list-0-item">
+                    <a href="#list-5" class="list-link"><span class="list-link-label">Onvoltooid/tegenwoordig deelwoord</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-5" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-5-1" class="list-link" onclick="setLesson('Onvoltooid/tegenwoordig deelwoord: Les 1', '1', 'otdw');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-5-2" onclick="setLesson('Onvoltooid/tegenwoordig deelwoord: Les 2', '2', 'otdw');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-5-3" class="list-link" onclick="setLesson('Onvoltooid/tegenwoordig deelwoord: Les 3', '3', 'otdw');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list-0-item">
+                    <a href="#list-6" class="list-link"><span class="list-link-label">Gebiedende wijs</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-6" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-6-1" class="list-link" onclick="setLesson('Gebiedende wijs: Les 1', '1', 'gbdw');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-6-2" onclick="setLesson('Gebiedende wijs: Les 2', '2', 'gbdw');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-6-3" class="list-link" onclick="setLesson('Gebiedende wijs: Les 3', '3', 'gbdw');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list-0-item">
+                    <a href="#list-7" class="list-link"><span class="list-link-label">Engelse werkwoorden</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-7" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-7-1" class="list-link" onclick="setLesson('Engelse werkwoorden: Les 1', '1', 'enww');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-7-2" onclick="setLesson('Engelse werkwoorden: Les 2', '2', 'enww');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-7-3" class="list-link" onclick="setLesson('Engelse werkwoorden: Les 3', '3', 'enww');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list-0-item">
+                    <a href="#list-8" class="list-link"><span class="list-link-label">Voltooid deelwoord bijvoegelijk</span><span class="right-arrow">&gt;</span></a>
+                    <ul id="list-8" class="list hidden">
+                        <li class="list-item">
+                            <a href="#list-8-1" class="list-link" onclick="setLesson('Voltooid deelwoord bijvoegelijk: Les 1', '1', 'vdbv');"><span class="list-link-label">Les 1</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-8-2" onclick="setLesson('Voltooid deelwoord bijvoegelijk: Les 2', '2', 'vdbv');"><span class="list-link-label">Les 2</span></a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#list-8-3" class="list-link" onclick="setLesson('Voltooid deelwoord bijvoegelijk: Les 3', '3', 'vdbv');"><span class="list-link-label">Les 3</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section id="hire">
+    <div id="dynamicdivtitle"></div>
+    <div id="dynamicdiv">
+    <button onclick="addForm();return false;" value="+" id="addButton" style="opacity:0">+</button>
+    <form class="form" id="form1" style="opacity:0">
+        <input style="width:100%" name="question" type="text" placeholder="Vul hier de vraag in..." id="question"/>
+        <input style="width:100%" name="answer" type="text" placeholder="Vul hier het antwoord in..." id="answer"/>
+        <textarea style="width:100%" name="positiveFeedback" placeholder="Vul hier de feedback in die de student krijgt bij een goed antwoord" id="positiveFeedback"/>
+        <textarea style="width:100%" name="negativeFeedback" placeholder="Vul hier de feedback in die de student krijgt bij een fout antwoord" id="negativeFeedback"/>
+        <button onclick="submitFormWithAjaxAndReload();return false;" >Toevoegen</button>
+        <button onclick="removeForm();return false;" >Annuleren</button>
+    </form>
+</div>
+<div id="questionList">
+
+</div></section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/createLesson.js"></script>
+</body>
+</html>

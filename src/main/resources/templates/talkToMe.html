@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Talk To Me!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" href="/css/talkToMe.css" rel="stylesheet" />
+</head>
+<body id="body">
+
+<section class="social" id="teachingOptions">
+    <header><h1>Please select an action or response to couple with the command you've given <i>!</i></h1></header>
+    <ul>
+        <li>
+            <h2>Action</h2><a class="bubble" href="#" title="Teach Butler an action"><i class="fa fa-lightbulb-o"></i></a>
+        </li>
+        <li>
+            <h2>Response</h2><a class="bubble" href="#" onclick="showTeachResponseView()" title="Teach Butler how to respond"><i class="fa fa-comments-o"></i></a>
+        </li>
+        <li>
+            <h2>Cancel</h2><a class="bubble" href="#" onclick="showSpeakingModeView()" title="Cancel"><i class="fa fa-reply"></i></a>
+        </li>
+    </ul>
+</section>
+
+<section class="social" id="options">
+    <header><h1>My apologies sir. I did not quite get that <i>!</i></h1></header>
+    <ul>
+        <li>
+            <h2>Teach Me</h2><a class="bubble" href="#" onclick="showTeachingOptionsView()" title="Teach Butler to do something"><i class="fa fa-graduation-cap"></i></a>
+        </li>
+        <li>
+            <h2>Ignore</h2><a class="bubble" href="#" onclick="showSpeakingModeView()" title="Ignore last command"><i class="fa fa-bed"></i></a>
+        </li>
+    </ul>
+</section>
+
+<section class="social" id="correctionOptions">
+    <header><h1>Did butler do something unexpected<i>?</i></h1></header>
+    <ul>
+        <li>
+            <h2>Correct Me</h2><a class="bubble" href="#" onclick="showTeachingOptionsView()" title="Correct Butler"><i class="fa fa-graduation-cap"></i></a>
+        </li>
+        <li>
+            <h2>Ignore</h2><a class="bubble" href="#" onclick="showSpeakingModeView()" title="Ignore last command"><i class="fa fa-bed"></i></a>
+        </li>
+    </ul>
+</section>
+
+<section class="social" id="speakingMode">
+    <header><h1>Hi<i>!</i> I'm Butler. Feel free to ask me anything<i>!</i></h1></header>
+    <ul>
+        <li>
+            <h2>Activate</h2><a class="bubble" href="#" onclick="activateButler()" title="Activate Butler"><i class="fa fa-microphone"></i></a>
+        </li>
+        <li>
+            <h2>Options</h2><a class="bubble" href="#" onclick="showOptionsWithoutCommandView()" title="Non-command based options"><i class="fa fa-bars"></i></a>
+        </li>
+    </ul>
+</section>
+
+<section class="social" id="optionsWithoutCommand">
+    <header><h1>Non-command options <i>.</i></h1></header>
+    <ul>
+        <li>
+            <h2>Schedule</h2><a class="bubble" href="#"  title="Teach butler to remind you of something"><i class="fa fa-calendar-plus-o"></i></a>
+        </li>
+        <li>
+            <h2>Cancel</h2><a class="bubble" href="#" onclick="showSpeakingModeView()" title="Cancel"><i class="fa fa-reply"></i></a>
+        </li>
+    </ul>
+</section>
+
+<section class="social" id="teachResponseView">
+    <header><h1>Create a response for the command you've given <i>.</i></h1></header>
+    <ul>
+        <li>
+            <h2>Response</h2><input id="response" class="bubbleInput" href="#" title="The response butler will give"/>
+        </li>
+        <li>
+            <h2>Test</h2><a class="bubble" href="#" onclick="speak(document.getElementById('response').value)" title="Test the response butler will give"><i class="fa fa-search"></i></a>
+        </li>
+        <li>
+            <h2>Extra</h2><a class="bubble" href="#" onclick="showExtraSpeechOptionsView()" title="Extra speech options"><i class="fa fa-puzzle-piece"></i></a>
+        </li>
+        <li>
+            <h2>Save</h2><a class="bubble" href="#" onclick="saveCommandAndAction(document.getElementById('response').value, 'SPEAK');showSpeakingModeView();" title="Save this response"><i class="fa fa-floppy-o"></i></a>
+        </li>
+        <li>
+            <h2>Cancel</h2><a class="bubble" href="#" onclick="showSpeakingModeView()" title="Cancel"><i class="fa fa-reply"></i></a>
+        </li>
+    </ul>
+</section>
+
+<section class="social" id="extraSpeechOptions">
+    <header><h1>Extra speech options <i>.</i></h1></header>
+    <ul>
+        <li>
+            <h2>Time</h2><a class="bubble" href="#"  onclick="showTeachResponseView()addVariableToResponse('$Time');" title="Have butler say the current time"><i class="fa fa-clock-o"></i></a>
+        </li>
+        <li>
+            <h2>Date</h2><a class="bubble" href="#" onclick="showTeachResponseView()addVariableToResponse('$Date');" title="Have butler say the current date"><i class="fa fa-calendar-o"></i></a>
+        </li>
+        <li>
+            <h2>Weather</h2><a class="bubble" href="#" onclick="showTeachResponseView();addVariableToResponse('$Weather:5:Utrecht$ ');" title="Have butler make a weather forecast"><i class="fa fa-cloud"></i></a>
+        </li>
+        <li>
+            <h2>Cancel</h2><a class="bubble" href="#" onclick="showTeachResponseView()" title="Cancel"><i class="fa fa-reply"></i></a>
+        </li>
+    </ul>
+</section>
+
+
+</body>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/views.js"></script>
+<script type="text/javascript" src="/js/talkToMe.js"></script>
+<script src="https://use.fontawesome.com/b8182c3958.js"></script>
+</html>
