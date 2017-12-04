@@ -175,7 +175,7 @@ function deleteQuestion(id){
     xmlHttp.send(null);
 }
 
-function getQuestions(){
+function getQuestions(sid, lid){
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
